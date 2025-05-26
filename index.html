@@ -99,7 +99,7 @@
     </section>
 
     <script>
-        // Navigation active state
+        
         const navLinks = document.querySelectorAll('.nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -108,7 +108,7 @@
             });
         });
         
-        // Service card hover effect
+        
         const serviceCards = document.querySelectorAll('.service-card');
         serviceCards.forEach(card => {
             card.addEventListener('mouseenter', function() {
@@ -119,14 +119,14 @@
             });
         });
         
-        // CTA button click
+        
         const ctaButton = document.querySelector('.cta-button');
         ctaButton.addEventListener('click', function(e) {
             e.preventDefault();
             alert('Objednávkový systém se brzy otevře!');
         });
         
-        // Animate stats counter on scroll
+        
         function animateCounter(element, target, duration) {
             let start = 0;
             const increment = target > 450 ? 10 : 1;
@@ -142,7 +142,7 @@
             }, stepTime);
         }
         
-        // Check if element is in viewport
+        
         function isInViewport(element) {
             const rect = element.getBoundingClientRect();
             return (
@@ -153,7 +153,7 @@
             );
         }
         
-        // Trigger counter animation when stats section is in view
+        
         const haircutsCount = document.getElementById('haircuts-count');
         let animated = false;
         
